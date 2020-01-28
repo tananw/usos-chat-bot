@@ -1,0 +1,11 @@
+flask
+rauth
+requests
+numpy
+tensorflow==1.15.0
+nltk
+tflearn
+flask_restplus
+requests
+radish-bdd
+python-dotenv
