@@ -2,7 +2,7 @@ flask
 rauth
 requests
 numpy
-tensorflow==1.15.0
+tensorflow==1.15.2
 nltk
 tflearn
 flask_restplus
