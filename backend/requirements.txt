@@ -9,3 +9,4 @@ flask_restplus
 requests
 radish-bdd
 python-dotenv
+flask-cors

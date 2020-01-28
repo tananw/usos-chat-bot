@@ -1,0 +1,13 @@
+{
+  "translation": {
+    "AppName": "USOS Chat Bot",
+    "LogIn": "Zaloguj się",
+    "AuthorizeHeader": "Zweryfikuj swoją tożsamość",
+    "AuthorizeSubHeader": "Wprowadź kod PIN otrzymany ze strony internetowe",
+    "AuthorizeLabel": "Kod pin",
+    "AuthorizePlaceholder": "Kod pin...",
+    "Authorize": "Autoryzuj",
+    "UnsupportedPhone": "Część aplikacji nie jest wspierana na Twoim telefonie",
+    "RequestError": "Wystąpił błąd podczas pobierania danych z serwera"
+  }
+}

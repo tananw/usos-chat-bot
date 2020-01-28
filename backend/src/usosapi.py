@@ -10,6 +10,7 @@ import re
 import requests.exceptions
 import logging
 import time
+from datetime import datetime
 
 VERSION = '1.0.0'
 
@@ -17,7 +18,7 @@ _REQUEST_TOKEN_SUFFIX = 'services/oauth/request_token'
 _AUTHORIZE_SUFFIX = 'services/oauth/authorize'
 _ACCESS_TOKEN_SUFFIX = 'services/oauth/access_token'
 
-SCOPES = 'offline_access'
+SCOPES = 'offline_access|studies|grades'
 
 _LOGGER = logging.getLogger('usos-chat-bot')
 _DOWNLOAD_LOGGER = logging.getLogger('usos-chat-bot.download')
@@ -152,6 +153,27 @@ class USOSAPIConnection():
             raise USOSAPIException(text)
         at = self.get_access_data()[0]
         _LOGGER.info('Authorization successful, received access token: ' + at)
+        return at
+
+    def get_user_information(self):
+        try:
+            identity = self.get('/services/users/user',
+                                fields="id|first_name|last_name|has_photo|photo_urls|student_programmes")
+            return identity
+        except USOSAPIException:
+            return False
+
+    def get_user_schedule(self):
+        try:
+            schedule = self.get('/services/tt/student')
+            return schedule
+        except USOSAPIException:
+            return False
+
+    def get_user_grades(self):
+        grades = self.get('/services/grades/latest',
+                          fields="value_symbol|passes|value_description|exam_session_number|exam_id|comment|grade_type_id|date_modified|modification_author")
+        return grades
 
     def get_access_data(self) -> tuple:
         if self.is_anonymous():
