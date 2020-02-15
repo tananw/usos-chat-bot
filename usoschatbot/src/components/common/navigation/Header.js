@@ -2,13 +2,13 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { MenuIcon } from '../../Icons';
 
-const Header = ({ navigation }) => {
+const Header = ({ navigation, route }) => {
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.headerMenuButton} onPress={() => navigation.toggleDrawer()}>
         <MenuIcon height={32} width={32} fill="#000000" />
       </TouchableOpacity>
-      <Text style={styles.screenTitle}>Header</Text>
+      <Text style={styles.screenTitle}>{route.name}</Text>
     </View>
   );
 };

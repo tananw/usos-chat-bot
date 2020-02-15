@@ -6,3 +6,5 @@ export const AUTHORIZE_URL = `${BASE_URL}/authorize`;
 export const USER_URL = `${BASE_URL}/user`;
 export const SCHEDULE_URL = `${BASE_URL}/schedule`;
 export const GRADES_URL = `${BASE_URL}/grades`;
+export const AUTHORIZED_URL = `${BASE_URL}/authorized`;
+export const LOGOUT_URL = `${BASE_URL}/logout`;

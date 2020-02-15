@@ -158,7 +158,7 @@ class USOSAPIConnection():
     def get_user_information(self):
         try:
             identity = self.get('/services/users/user',
-                                fields="id|first_name|last_name|has_photo|photo_urls|student_programmes")
+                                fields="id|first_name|last_name|has_photo|photo_urls|student_programmes|email")
             return identity
         except USOSAPIException:
             return False
@@ -172,7 +172,8 @@ class USOSAPIConnection():
 
     def get_user_grades(self):
         grades = self.get('/services/grades/latest',
-                          fields="value_symbol|passes|value_description|exam_session_number|exam_id|comment|grade_type_id|date_modified|modification_author")
+                          fields="value_symbol|passes|value_description|exam_session_number|exam_id|comment|grade_type_id|date_modified|modification_author",
+                          days=720)
         return grades
 
     def get_access_data(self) -> tuple:

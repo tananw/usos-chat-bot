@@ -12,9 +12,9 @@
   "dependencies": {
     "@react-native-community/async-storage": "^1.7.1",
     "@react-native-community/masked-view": "^0.1.6",
-    "@react-navigation/drawer": "^5.0.0-alpha.41",
-    "@react-navigation/native": "^5.0.0-alpha.29",
-    "@react-navigation/stack": "^5.0.0-alpha.63",
+    "@react-navigation/drawer": "^5.0.5",
+    "@react-navigation/native": "^5.0.5",
+    "@react-navigation/stack": "^5.0.5",
     "axios": "^0.19.2",
     "i18next": "^19.1.0",
     "react": "16.9.0",

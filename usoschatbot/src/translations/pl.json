@@ -8,6 +8,14 @@
     "AuthorizePlaceholder": "Kod pin...",
     "Authorize": "Autoryzuj",
     "UnsupportedPhone": "Część aplikacji nie jest wspierana na Twoim telefonie",
-    "RequestError": "Wystąpił błąd podczas pobierania danych z serwera"
+    "RequestError": "Wystąpił błąd podczas pobierania danych z serwera",
+    "HomeScreen": "Ekran domowy",
+    "GradesScreen": "Oceny",
+    "ScheduleScreen": "Grafik",
+    "Leader": "Prowadzący",
+    "Grade": "Ocena",
+    "Passed": "Zdane",
+    "NotPassed": "Nie zdane",
+    "Problem": "Problem"
   }
 }

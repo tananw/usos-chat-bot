@@ -1,7 +1,7 @@
 import React from 'react';
 import { StatusBar } from 'react-native';
 import { enableScreens } from 'react-native-screens';
-import { NavigationNativeContainer } from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 
 import i18n from 'i18next';
 import * as RNLocalize from 'react-native-localize';
@@ -34,10 +34,10 @@ const App = () => {
   return (
     <Provider store={store}>
       <PersistGate loading={<Loader />} persistor={persistor}>
-        <NavigationNativeContainer>
+        <NavigationContainer>
           <StatusBar translucent barStyle="dark-content" backgroundColor="transparent" />
           <MainNavigator />
-        </NavigationNativeContainer>
+        </NavigationContainer>
       </PersistGate>
     </Provider>
   );

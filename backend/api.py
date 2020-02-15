@@ -59,3 +59,14 @@ class GradesHandler(Resource):
             return usosApi.get_user_grades(), HTTPSStatusCodes.OK.value
         else:
             return {'error': 'Unauthorized'}, HTTPSStatusCodes.UNAUTHORIZED.value
+
+@api.route('/authorized')
+class AuthorizedHandler(Resource):
+    def get(self):
+        return usosApi.is_authorized(), HTTPSStatusCodes.OK.value
+
+@api.route('/logout')
+class LogoutHandler(Resource):
+    def get(self):
+        return usosApi.logout(), HTTPSStatusCodes.OK.value
+        
