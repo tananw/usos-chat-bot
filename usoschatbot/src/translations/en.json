@@ -1,7 +1,21 @@
 {
   "translation": {
-    "App Name": "USOS Chat Bot",
-    "Login Screen": "Ekran logowania",
-    "Log in": "Zaloguj się"
+    "AppName": "USOS Chat Bot",
+    "LogIn": "Login",
+    "AuthorizeHeader": "Verify your identity",
+    "AuthorizeSubHeader": "Enter PIN code you've received from the website",
+    "AuthorizeLabel": "PIN code",
+    "AuthorizePlaceholder": "PIN code...",
+    "Authorize": "Authorize",
+    "UnsupportedPhone": "Part of the app is not supported on your phone",
+    "RequestError": "An error occured during downloading data from the server",
+    "HomeScreen": "Home screen",
+    "GradesScreen": "Grades",
+    "ScheduleScreen": "Schedule",
+    "Leader": "Lecturer",
+    "Grade": "Grade",
+    "Passed": "Passed",
+    "NotPassed": "Not passed",
+    "Problem": "Problem"
   }
 }
