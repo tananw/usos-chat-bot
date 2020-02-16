@@ -3,7 +3,7 @@
     "AppName": "USOS Chat Bot",
     "LogIn": "Zaloguj się",
     "AuthorizeHeader": "Zweryfikuj swoją tożsamość",
-    "AuthorizeSubHeader": "Wprowadź kod PIN otrzymany ze strony internetowe",
+    "AuthorizeSubHeader": "Wprowadź kod PIN otrzymany ze strony internetowej",
     "AuthorizeLabel": "Kod pin",
     "AuthorizePlaceholder": "Kod pin...",
     "Authorize": "Autoryzuj",
